@@ -1,8 +1,8 @@
-prefix=/home/mhanas/anro-hanas_tuzimek/catkin_ws/install
+prefix=/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials
 Version: 0.0.0
-Cflags: -I/home/mhanas/anro-hanas_tuzimek/catkin_ws/install/include
-Libs: -L/home/mhanas/anro-hanas_tuzimek/catkin_ws/install/lib 
+Cflags: -I/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install/include
+Libs: -L/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install/lib 
 Requires: message_runtime

@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/mhanas/anro-hanas_tuzimek/catkin_ws/build"
+export CMAKE_PREFIX_PATH="/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/src:$ROS_PACKAGE_PATH"
