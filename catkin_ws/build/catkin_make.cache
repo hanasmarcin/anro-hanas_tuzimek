@@ -1,2 +1,2 @@
-beginner_tutorials
+beginner_tutorials:lab1
 -DCATKIN_DEVEL_PREFIX=/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install -G Unix Makefiles

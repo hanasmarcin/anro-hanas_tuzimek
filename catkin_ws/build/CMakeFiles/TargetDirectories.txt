@@ -70,3 +70,10 @@
 /home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/beginner_tutorials/CMakeFiles/beginner_tutorials_gennodejs.dir
 /home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/beginner_tutorials/CMakeFiles/roscpp_generate_messages_nodejs.dir
 /home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/install/strip.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/edit_cache.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/list_install_components.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/test.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/install/local.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/rebuild_cache.dir
+/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/build/lab1/CMakeFiles/install.dir

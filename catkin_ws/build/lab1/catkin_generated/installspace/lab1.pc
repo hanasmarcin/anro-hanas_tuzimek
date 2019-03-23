@@ -1,0 +1,8 @@
+prefix=/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install
+
+Name: lab1
+Description: Description of lab1
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/radek/anro1/anro-hanas_tuzimek/catkin_ws/install/lib 
+Requires: 
