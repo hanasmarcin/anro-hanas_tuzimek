@@ -91,7 +91,7 @@
     <joint name="2 z czlonem" type="fixed">
     <parent link="joint_2"/>
     <child link="czlon_2"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="0 0 0" rpy="${props['i3']['j_rpy']}"/>
   </joint>
 
 </robot>
