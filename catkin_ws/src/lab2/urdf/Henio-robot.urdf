@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<robot name="Henio-robot">
+<robot name="Henio-robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<xacro:property name="props" value="${load_yaml('../urdf.yaml')}"/>
 
 
 <material name="blue">
@@ -25,20 +26,20 @@
     <link name="joint_1">
     <visual>
       <geometry>
-        <cylinder length="0.2" radius="0.1"/>
+        <sphere radius="0.1"/>
       </geometry>
       <material name="blue"/>
-      <origin rpy="1.57 0 0"/>
+      <origin rpy="0 0 0"/>
     </visual>
     </link>
   
     <link name="czlon_1">
     <visual>
       <geometry>
-        <box size="0.1 0.1 0.5 "/>
+        <box size="${props[3]['l_len']} 0.1 0.1"/>
       </geometry>
     <material name="white"/>
-        <origin xyz="0 0 0.3"/>
+        <origin xyz="${props[3]['l_xyz']}" rpy="0 0 0"/>
     </visual>
   </link>
 
@@ -48,17 +49,17 @@
         <cylinder length="0.2" radius="0.1"/>
       </geometry>
       <material name="blue"/>
-      <origin rpy="1.6 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
     </visual>
     </link>
 
     <link name="czlon_2">
     <visual>
       <geometry>
-        <box size="0.05 0.05 0.3"/>
+        <box size="0.3 0.05 0.05"/>
       </geometry>
     <material name="white"/>
-        <origin xyz="0 0 0.15"/>
+        <origin xyz="0.15 0 0"/>
     </visual>
     </link>
 
@@ -67,30 +68,30 @@
       <axis xyz="0 0 1"/>
     <parent link="base_link"/>
     <child link="joint_1"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="${props[1]['j_xyz']}" rpy="${props[1]['j_rpy']}"/>
   </joint>
 
    <joint name="1_przod_tyl" type="revolute">
    <limit effort="1000.0" lower="-0.8" upper="0.8" velocity="0.5"/>
-      <axis xyz="0 1 0"/>
+      <axis xyz="0 0 1"/>
     <parent link="joint_1"/>
     <child link="czlon_1"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="${props[2]['j_xyz']}" rpy="${props[2]['j_rpy']}"/>
   </joint>
 
    
     <joint name="czlon_z_2" type="revolute">
     <limit effort="1000.0" lower="-2" upper="2" velocity="0.5"/>
-      <axis xyz="0 1 0"/>
+      <axis xyz="0 0 1"/>
     <parent link="czlon_1"/>
     <child link="joint_2"/>
-    <origin xyz="0 0 0.5"/>
+    <origin xyz="${props[3]['j_xyz']}" rpy="${props[3]['j_rpy']}"/>
   </joint>
 
     <joint name="2 z czlonem" type="fixed">
     <parent link="joint_2"/>
     <child link="czlon_2"/>
-    <origin xyz="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
 </robot>
