@@ -13,7 +13,7 @@ if __name__ == '__main__':
         params = json.loads(file.read())
 
     with open('../urdf.yaml', 'w') as file:
-        for key in params.keys():
+        for key in sorted(params.keys()):
             a, d, al, th = params[key]
             al, a, d, th = float(al), float(a), float(d), float(th)
 
@@ -21,9 +21,14 @@ if __name__ == '__main__':
             rz = rotation_matrix(th, zaxis)
             tx = translation_matrix((a, 0, 0))
             rx = rotation_matrix(al, xaxis)
+	    print(tx)
+	    print(rx)
+	    print(rz)
+	    print(tz)
 
-            matrix = concatenate_matrices(tz, rz, tx, rx)
-
+            matrix = concatenate_matrices(tx, rx, tz, rz)
+	    
+	    print(matrix)
             rpy = euler_from_matrix(matrix)
             xyz = translation_from_matrix(matrix)
 
