@@ -1,0 +1,14 @@
+ <launch>
+    # Podawanie do serwera paramterow liter odpowiadajacym 
+    # klawiszom odpowiedzialnym za sterowanie
+    <rosparam param="left">'g'</rosparam>	
+    <rosparam param="right">'j'</rosparam>	
+    <rosparam param="up">'y'</rosparam>
+    <rosparam param="down">'h'</rosparam>
+
+    # Stworzenie wezla - zolwia Zdzisia
+    <node pkg="turtlesim" name="Zdzisiu" type="turtlesim_node"/>
+    # Stworzenie wezla wysylajacego wiadomosci sterujace
+    <node pkg="lab1" name="move" type="move.py" output="screen"/>
+
+</launch>

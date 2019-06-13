@@ -1,0 +1,7 @@
+<launch>
+    <param name="robot_description" command="xacro --inorder '$(find lab2)/urdf/Henio-robot.urdf'"/>
+    <param name="use_gui" value="true"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-f base_link" required="true"/>
+
+</launch>
