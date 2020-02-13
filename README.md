@@ -9,4 +9,4 @@ The tasks were to:
 
 Launch files were created and every component was then visualised in RVIZ.
 
-More description (in polish) in project's [wiki](https://github.com/hanasmarcin/anro-hanas_tuzimek/wiki).
+Further description (in polish) in project's [wiki](https://github.com/hanasmarcin/anro-hanas_tuzimek/wiki).
